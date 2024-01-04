@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to our home site">
+    <link rel="stylesheet" href="../ant-design-icons/sharif-icon/style.css">
+    <link rel="stylesheet" href="build/tailwind.css">
+    <title>Document</title>
+</head>
+<body class="font-sans">
+    <header class="container w-full mx-auto mobile-header lg:hidden">
+        <div class="flex flex-row justify-between items-center mt-2">
+            <figure class="p-4 pt-0">
+                <img src="../photos/logo.png" alt="logoImage">
+            </figure>
+            <button>
+                <i class="sharif-bars p-4 cursor-pointer"></i>
+            </button>
+        </div>
+    </header>
+    <main class="container mx-auto xl:max-w-screen-2xl page-main">
+        <section class="w-full mx-auto filter-panel flex justify-center bg-[#2D3748] rounded-md">
+            <div class="w-full flex flex-row justify-around items-center lg:hidden p-2 px-3">
+                 <div class="flex flex-row items-center gap-2 p-3 bg-[#1A202C] rounded-md">
+                     <i class="sharif-search text-[#A0AEC0]"></i>
+                     <input class="search-box bg-transparent focus:outline-none text-[#A0AEC0]" type="text" placeholder="Search by keywoards">
+                 </div>
+                 <button class="flex flex-row gap-2 items-center p-2 bg-[#4A5568] rounded-md">
+                     <i class="sharif-secondary"></i>
+                     <span class="text-white font-semibold text-lg">Filter</span>
+                 </button>
+            </div>
+            <div class="hidden lg:flex flex-col w-full">
+                <figure class="p-4 py-2">
+                    <img src="../photos/desktop-logo.png" alt="desktop-logo">
+                </figure>
+             <div class="w-full bg-[#2D3748] p-4 flex flex-col gap-y-5">
+                 <div class="flex flex-col gap-y-4">                
+                     <div class="flex flex-row gap-x-4">
+                        <div class="w-full">
+                            <span class="text-[#A0AEC0] mb-4"> Bedrooms </span>
+                            <select class="bg-[#4A5568] w-full text-white rounded-md p-1" name="" id="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                            </select>
+                        </div>
+                        <div class="w-full">
+                            <span class="text-[#A0AEC0]"> Bathrooms </span>
+                            <select class="bg-[#4A5568] w-full text-white rounded-md p-1" name="" id="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                     </div>
+                     <form action="" method="post" class="flex flex-col gap-1">
+                         <div><input type="radio" class="form-input p-0 rounded-full bg-[#1A202C]" id="House" name="drone" value="House"/><label for="House" class="text-white"> House </label></div>
+                         <div><input type="radio" class="form-input p-0 rounded-full bg-[#1A202C]" id="Apartment" name="drone" value="Apartment" /><label for="Apartment" class="text-white"> Apartment </label></div>
+                         <div><input type="radio" class="form-input p-0 rounded-full bg-[#1A202C]" id="Loft" name="drone" value="Loft" /><label for="Loft" class="text-white"> Loft </label></div>
+                         <div><input type="radio" class="form-input p-0 rounded-full bg-[#1A202C]" value="Townhouse" id="Townhouse" name="drone"><label for="Townhouse" class="text-white"> Townhouse </label></div>
+                     </form>
+                     <hr class="border border-[#1A202C]">
+                     <form action="" method="post" class="flex flex-col gap-1">
+                         <div><input type="checkbox" class="form-input rounded px-3 bg-[#1A202C]" id="Balcony"><label for="Balcony" class="text-white"> Balcony </label></div>
+                         <div><input type="checkbox" class="form-input rounded px-3 bg-[#1A202C]" id="Central Air"><label for="Central Air" class="text-white"> Central Air </label></div>
+                         <div><input type="checkbox" class="form-input rounded px-3 bg-[#1A202C]" id="Pool"><label for="Pool" class="text-white" aria-checked=""> Pool </label></div>
+                         <div><input type="checkbox" class="form-input rounded px-3 bg-[#1A202C]" id="Front Porch"><label for="Front Porch" class="text-white"> Front Porch </label></div>
+                         <div><input type="checkbox" class="form-input rounded px-3 bg-[#1A202C]" id="Double Driveway"><label for="Double Driveway" class="text-white">  Double Driveway </label></div>
+                     </form>
+                 </div>
+             </div>
+            </div>
+        </section>
+        <section class="w-full flex flex-col">
+            <div class="p-4 hidden lg:flex justify-between items-center">
+                <form action="index.html" method="post">
+                    <div class="flex flex-row items-center gap-x-4 bg-[#E2E8F0] py-2 px-4 rounded-full">
+                        <i class="sharif-search text-[#718096]"></i>
+                        <input class="bg-transparent border-0 outline-none text-[#718096]" type="text" placeholder="Search by location">
+                    </div>
+                </form>
+                <nav class="flex flex-row gap-x-6 items-center">
+                    <ul class="flex flex-row gap-x-4">
+                        <li class="font-semibold"><a href="#"> News </a></li>
+                        <li class="font-semibold"><a href="#"> Jobs </a></li>
+                        <li class="font-semibold text-[#38B2AC]"><a href="#">Sign in</a></li>
+                    </ul>
+                    <div class="flex flex-row gap-3">
+                        <i class="sharif-bell-regular p-3 cursor-pointer text-[#A0AEC0]"></i>
+                        <i class="sharif-envelope-regular p-3 cursor-pointer text-[#A0AEC0]"></i>
+                    </div>
+                </nav>
+            </div>
+            <div class="all-items lg:bg-[#E2E8F0] h-auto px-4 lg:py-11 lg:px-8">
+                <h1 class="text-xl"> Los Angeles </h1>
+                <div class="w-full flex flex-row justify-between items-center">
+                    <p class="text-[#718096]">Live like the stars in these luxurious Southern California estates.</p>
+                    <a href="#" class="hidden lg:block text-[#5A67D8] text-lg"> View all </a>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 mt-8 gap-y-3 sm:gap-x-4 !sm:row-gap-5 ">
+                    <div class="item-home">
+                        <figure>
+                            <img class="rounded-md" src="../photos/1.jpg" alt="home-item">
+                        </figure>
+                       <div class="relative mx-4 bottom-12">
+                        <div class="w-full flex flex-col gap-2 bg-white rounded-md p-4 shadow-lg">
+                            <div class="w-full flex flex-row items-center gap-2">
+                                <span class="bg-[#B2F5EA] rounded-full text-[#285E61] p-3 py-0.5">PLUS</span>
+                                <span class="text-[#718096]">3 BEDS</span>
+                                <span class="text-[#718096]">2 BATHS </span>
+                            </div>
+                            <div class="flex flex-col justify-start gap-2">
+                                <h2 class="font-semibold text-lg text-balance"> Isolated house outside of... </h2>
+                                <span>$1،250 <span class="text-[#718096]"> /wk </span></span>
+                            </div>
+                            <div class="flex flex-row gap-1">
+                                <i class="sharif-secondary1 text-[#38B2AC]"></i>
+                                <i class="sharif-secondary1 text-[#38B2AC]"></i>
+                                <i class="sharif-secondary1 text-[#38B2AC]"></i>
+                                <i class="sharif-secondary1 text-[#38B2AC]"></i>
+                                <i class="sharif-secondary1 text-[#CBD5E0]"></i>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="item-home">
+                        <figure>
+                            <img class="rounded-md" src="../photos/8.jpg" alt="home-item">
+                        </figure>
+                       <div class="relative mx-4 bottom-12">
+                        <div class="w-full flex flex-col gap-2 bg-white rounded-md p-4 shadow-lg">
+                            <div class="w-full flex flex-row items-center gap-2">
+                                <span class="bg-[#B2F5EA] rounded-full text-[#285E61] p-3 py-0.5">PLUS</span>
+                                <span class="text-[#718096]">3 BEDS</span>
+                                <span class="text-[#718096]">2 BATHS </span>
+                            </div>
+                            <div class="flex flex-col justify-start gap-2">
+                                <h2 class="font-semibold text-lg text-balance"> Isolated house outside of... </h2>
+                                <span>$1،250 <span class="text-[#718096]"> /wk </span></span>
+                            </div>
+                            <div class="flex flex-row gap-1">
+                                <i class="sharif-secondary1 text-[#38B2AC]"></i>
+                                <i class="sharif-secondary1 text-[#38B2AC]"></i>
+                                <i class="sharif-secondary1 text-[#38B2AC]"></i>
+                                <i class="sharif-secondary1 text-[#38B2AC]"></i>
+                                <i class="sharif-secondary1 text-[#CBD5E0]"></i>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="item-home">
+                        <figure>
+                            <img class="rounded-md" src="../photos/7.jpg" alt="home-item">
+                        </figure>
+                       <div class="relative mx-4 bottom-12">
+                        <div class="w-full flex flex-col gap-2 bg-white rounded-md p-4 shadow-lg">
+                            <div class="w-full flex flex-row items-center gap-2">
+                                <span class="bg-[#B2F5EA] rounded-full text-[#285E61] p-3 py-0.5">PLUS</span>
+                                <span class="text-[#718096]">3 BEDS</span>
+                                <span class="text-[#718096]">2 BATHS </span>
+                            </div>
+                            <div class="flex flex-col justify-start gap-2">
+                                <h2 class="font-semibold text-lg text-balance"> Isolated house outside of... </h2>
+                                <span>$1،250 <span class="text-[#718096]"> /wk </span></span>
+                            </div>
+                            <div class="flex flex-row gap-1">
+                                <i class="sharif-secondary1 text-[#38B2AC]"></i>
+                                <i class="sharif-secondary1 text-[#38B2AC]"></i>
+                                <i class="sharif-secondary1 text-[#38B2AC]"></i>
+                                <i class="sharif-secondary1 text-[#38B2AC]"></i>
+                                <i class="sharif-secondary1 text-[#CBD5E0]"></i>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="item-home">
+                        <figure>
+                            <img class="rounded-md" src="../photos/4.jpg" alt="home-item">
+                        </figure>
+                       <div class="relative mx-4 bottom-12">
+                        <div class="w-full flex flex-col gap-2 bg-white rounded-md p-4 shadow-lg">
+                            <div class="w-full flex flex-row items-center gap-2">
+                                <span class="bg-[#B2F5EA] rounded-full text-[#285E61] p-3 py-0.5">PLUS</span>
+                                <span class="text-[#718096]">3 BEDS</span>
+                                <span class="text-[#718096]">2 BATHS </span>
+                            </div>
+                            <div class="flex flex-col justify-start gap-2">
+                                <h2 class="font-semibold text-lg text-balance"> Isolated house outside of... </h2>
+                                <span>$1،250 <span class="text-[#718096]"> /wk </span></span>
+                            </div>
+                            <div class="flex flex-row gap-1">
+                                <i class="sharif-secondary1 text-[#38B2AC]"></i>
+                                <i class="sharif-secondary1 text-[#38B2AC]"></i>
+                                <i class="sharif-secondary1 text-[#38B2AC]"></i>
+                                <i class="sharif-secondary1 text-[#38B2AC]"></i>
+                                <i class="sharif-secondary1 text-[#CBD5E0]"></i>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
